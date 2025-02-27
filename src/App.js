@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
-import HeroSection from "./components/HeroSection";
 import ProductList from "./components/ProductList";
 import FeaturedProducts from "./components/FeaturedProducts";
 import ContactUs from "./components/ContactUs";
@@ -60,9 +58,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <HeroSection />
               <FeaturedProducts />
-              <Home />
             </>
           } />
           <Route path="/products" element={<ProductList addToCart={addToCart} />} />

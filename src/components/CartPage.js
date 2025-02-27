@@ -53,4 +53,5 @@ const CartPage = ({ cart, removeFromCart, increaseQuantity, decreaseQuantity }) 
   );
 };
 
+
 export default CartPage;

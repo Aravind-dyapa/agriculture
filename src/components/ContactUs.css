@@ -1,33 +1,107 @@
+/* Contact Us Section */
 .contact-us-container {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-form {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-us-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Form */
+  form {
     display: flex;
     flex-direction: column;
-}
-
-textarea {
-    padding: 10px;
+  }
+  
+  textarea {
+    padding: 15px;
     width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
     border: 1px solid #ddd;
-}
-
-button {
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  input, textarea {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Button Styling */
+  button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
     background-color: #45a049;
-}
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    background-color: #398e3d;
+    transform: scale(1);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(72, 230, 128, 0.8);
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .contact-us-container {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      font-size: 22px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px 18px;
+    }
+  }
+  
